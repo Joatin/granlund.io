@@ -7,6 +7,8 @@
   Gatsby minimal TypeScript starter
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45cbacea-3c99-4d88-9e78-ee52a0f0733e/deploy-status)](https://app.netlify.com/sites/marvelous-chebakia-b20d24/deploys)
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**

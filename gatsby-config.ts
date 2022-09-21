@@ -1,27 +1,38 @@
-import type { GatsbyConfig } from "gatsby";
+import type {GatsbyConfig} from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `granlund.io`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Joatin Granlund AB`,
+    siteUrl: `https://granlund.io`,
+    description: `Joatin Granlund AB`,
+    image: `/gatsby-icon.png`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.jpeg"
-    }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.jpeg',
+      },
     },
-    __key: "images"
-  }]
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+  ],
 };
 
 export default config;

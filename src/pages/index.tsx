@@ -3,6 +3,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import styled from "styled-components";
 import "normalize.css"
 import "../global.css"
+import SEO from "../components/SEO/SEO";
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -40,3 +41,7 @@ const IndexPage = () => {
 }
 
 export default IndexPage;
+
+export const Head = () => (
+    <SEO />
+)
