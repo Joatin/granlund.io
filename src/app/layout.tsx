@@ -14,8 +14,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Joatin Granlund",
-  description: "Joatin Granlund",
+  title: "Konsultprofil | Joatin Granlund",
+  description: "Jag är senior tech lead och systemarkitekt med över 10 års erfarenhet av att leda och modernisera komplexa backend‑ och cloud‑lösningar i enterprise‑miljöer. Jag har drivit leveranser, designat robusta system i AWS och Azure, och coachat team mot leverans och hållbar teknisk kvalitet. Jag hjälper organisationer att röra sig mot moderna molnarkitekturer, tekniska riktlinjer och skalbara plattformar med fokus på stabilitet, säkerhet och affärsnytta.",
+  metadataBase: new URL("https://granlund.io"),
+  openGraph: {
+    siteName: "Konsultprofil | Joatin Granlund",
+    type: "website",
+    locale: "sv_SE"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+    googleBot: "index, follow"
+  },
+  applicationName: "Konsultprofil | Joatin Granlund",
+  keywords: [
+    "Joatin Granlund",
+    "systemutveckling",
+    "full-stack",
+    "react",
+    "typescript",
+    "ai"
+  ],
 };
 
 export default function RootLayout({
