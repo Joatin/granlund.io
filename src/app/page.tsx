@@ -18,13 +18,13 @@ import NextImage from "next/image";
 import profileSrc from "../../public/profile.jpg"
 import {LuSparkles} from "react-icons/lu";
 
-const prompt = "Read from this URL: https://granlund.io and explain it to me."
+const prompt = "Läs CV:et från den här websidan: https://granlund.io och berätta om den här konsultet kan vara rätt för rollen som jag har"
 
 export default function Home() {
 
   return (
       <Container py={8} maxW={"6xl"}>
-        <Grid templateColumns="repeat(4, 1fr)" gap={8}>
+        <Grid templateColumns={{lg: "repeat(4, 1fr)"}} gap={8}>
           <GridItem colSpan={1}>
             <Stack>
               <Image rounded="md" asChild>
@@ -68,7 +68,7 @@ export default function Home() {
           </GridItem>
           <GridItem colSpan={3}>
             <Stack>
-              <HStack justifyContent={"space-between"}>
+              <Stack direction={{lg: "row", base: "column"}} justifyContent={"space-between"}>
                 <Stack gap={0}>
                   <Heading size={"4xl"}>Joatin Granlund</Heading>
                   <Text ml={2} color={"fg.muted"}>Senior Tech Lead</Text>
@@ -81,7 +81,7 @@ export default function Home() {
                     </a>
                   </Button>
                 </ButtonGroup>
-              </HStack>
+              </Stack>
             </Stack>
             <Stack my={4}>
               <Text>
