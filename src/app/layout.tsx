@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Provider } from "@/components/ui/provider"
 import "./globals.css";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,6 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv" suppressHydrationWarning>
+      <GoogleTagManager gtmId="G-QGGS50P0B5" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
