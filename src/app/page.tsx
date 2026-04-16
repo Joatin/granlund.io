@@ -21,7 +21,6 @@ import {LuSparkles} from "react-icons/lu";
 const prompt = "Läs CV:et från den här websidan: https://granlund.io och berätta om den här konsultet kan vara rätt för rollen som jag har"
 
 export default function Home() {
-
   return (
       <Container py={8} maxW={"6xl"}>
         <Grid templateColumns={{lg: "repeat(4, 1fr)"}} gap={8}>
@@ -102,7 +101,7 @@ export default function Home() {
                   </Timeline.Connector>
                   <Timeline.Content>
                     <Timeline.Title>Tre</Timeline.Title>
-                    <Timeline.Description>2024-2025</Timeline.Description>
+                    <Timeline.Description>2024-2026</Timeline.Description>
                     <Text textStyle="sm">
                       Jag var en del av ett team på Tre som utvecklade ett internt säljstöd med Next.js och
                       Contentful. Jag arbetade med både frontend- och backend-komponenter och bidrog till att leverera
